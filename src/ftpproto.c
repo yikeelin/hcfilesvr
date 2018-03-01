@@ -247,7 +247,7 @@ void handle_child(session_t *sess)
 		//printf("cmd=[%s] arg=[%s]\n", sess->cmd, sess->arg);
 		//将命令转换为大写
 		str_upper(sess->cmd);
-		//vdebugwrite( __FILE__, __LINE__, "cmd = [%s]. arg = [%s].", sess->cmd, sess->arg );
+		vdebugwrite( __FILE__, __LINE__, "cmd = [%s]. arg = [%s].", sess->cmd, sess->arg );
 		//处理FTP命令
 		int i = 0;
 		int size = sizeof(ctrl_cmds) / sizeof(ctrl_cmds[0]);
